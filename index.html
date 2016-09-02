@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GifoMania</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="http://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+    <!-- link to the jQuery Library -->
+</head>
+
+<body>
+    <div class="page-header">
+        <h1>GifoMania <br> <small>Find gif from any TV show. Use the buttons provided or add shows of your own.</small></h1>
+    </div>
+    <div class="container-fluid buttonField">
+        <div class="row">
+            <div class="col-md-9 col-xs-9  buttons"></div>
+            <asside class="col-md-3 col-xs-3" asside>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="showInput" placeholder="TV Show">
+                    </div>
+                    <button type="submit" class="btn-md btn-success submit">Submit</button>
+                </form>
+            </asside>
+        </div>
+        <div class="row">
+            <div class="col-lg-11 gifsHere"></div>
+            <div class="col-lg-1 blank"></div>
+        </div>
+    </div>
+</body>
+
+</html>

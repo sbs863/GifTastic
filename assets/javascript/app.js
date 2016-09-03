@@ -1,3 +1,5 @@
+
+//array of initial shows
 var shows = [
     "Deadwood", "The Wire", "Breaking Bad", "Rick and Morty", "Star Trek", "Enlightened", "Game of Thrones", "Peep Show", "The Mighty Boosh", "IT Crowd",
     "Summer Heights High", "The Sopranos", "Silicon Valley", "Luther", "Sherlock", "Home Movies", "Space Ghost Coast to Coast", "The Venture Brothers",
@@ -10,22 +12,25 @@ var shows = [
 
 $(document).ready(function() {
 
-
+//this function will create buttons out of all the items in the shows array and add them to the page
     function addShow() {
-
+//empty's 
         $('.buttons').empty();
 
         for (var i = 0; i < shows.length; ++i) {
-
+            // creates buttons and defines their attributes
             var showButtons = $('<button type="button" class="btn-lg btn-primary" value = "" data-toggle="button" aria-pressed="false" autocomplete="off">' + shows[i] + '</button>');
             showButtons.attr('data-name', shows[i]);
             showButtons.addClass("MYCLASS");
             $('.buttons').append(showButtons);
 
         }
+        //creates a click function
         $(".MYCLASS").on('click', function() {
-
+            $('.gifsHere').html("");
+            //'this' will allow us to target the name attribute of any button that is clicked so that we can input it into the query url for each indiv buttons.
             var clickName = $(this).data('name');
+            //Giphy API key
             var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + clickName + "&api_key=dc6zaTOxFJmzC";
 
             $.ajax({

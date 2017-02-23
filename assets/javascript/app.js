@@ -31,7 +31,7 @@ $(document).ready(function() {
             //'this' will allow us to target the name attribute of any button that is clicked so that we can input it into the query url for each indiv buttons.
             var clickName = $(this).data('name');
             //Giphy API key
-            var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + clickName + "&api_key=dc6zaTOxFJmzC";
+            var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + clickName + "&api_key=dc6zaTOxFJmzC";
 
             $.ajax({
                 url: queryURL,

@@ -31,7 +31,7 @@ $(document).ready(function() {
             var clickName = $(this).data('name');
             //Giphy API key
 
-            var queryURL = 'http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag="' + clickName + '"';
+            var queryURL = 'https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag="' + clickName + '"';
 
             function showRandomGif() {
                 $.ajax({

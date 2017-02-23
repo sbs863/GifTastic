@@ -1,0 +1,21 @@
+{
+  "name": "giftastic",
+  "version": "1.0.0",
+  "description": "In this assignment, you'll use the GIPHY API to make a dynamic web page that populates with gifs of your choice. To finish this task, you must call the GIPHY API and use JavaScript and jQuery to change the HTML of your site.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbs863/GifTastic.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbs863/GifTastic/issues"
+  },
+  "homepage": "https://github.com/sbs863/GifTastic#readme"
+}
